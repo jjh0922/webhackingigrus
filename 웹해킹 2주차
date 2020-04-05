@@ -1,0 +1,140 @@
+<1. 기술소개>
+HTML – HyperText Markup Language
+	=> 마크업이라는 문법적 특성을 가진 프로그래밍 언어
+	=> 웹브라우저에 표시되는 웹페이지를 만들어달라고 요청하는 언어
+	=> 사람과 컴퓨터, 특히 웹브라우저 사이에서 서로가 이해할 수 있는 약속
+
+● 아무사이트에서나 [우클릭] -> [페이지소스보기] -> [html 스크립트 창]
+
+<2. 기본문법 - TAG>
+● 일단 직접해보자.
+	1. 메모장에 아무거나 입력
+	2. 다른 이름으로 저장, 제목: [name].html, 형식: 모든 파일, 인코딩: UTF-8
+
+이름이 a.html이다. 뒤에 붙는 “.html”은 확장자명, 이걸 통해 어떻게 파일을 열 것인지 판단
+
+● 강조하기
+	축구장에서 퀴즈 대결? ‘사회적 거리두기’ 아이디어 봇물
+=(html)=> 축구장에서 퀴즈 대결? <strong>‘사회적 거리두기’</strong> 아이디어 봇물 
+=(뷰어)=> 축구장에서 퀴즈대결? ‘사회적 거리두기’ 아이디어 봇물
+
+- <strong>을 브라우저가 보면 </strong>이 등장할 때까지 모두 볼드처리
+- <strong>: 시작태그, </strong>: 닫히는 태그
+
+● 제목달기
+-<h1> 제목 </h1>
+- html에서는 줄 바꿈 인식하지 않아
+- header은 ‘글씨를 크게’, ‘볼드 처리’, ‘ 끝에 줄 바꿈’ 이 세 가지를 다 갖고 있음
+- h는 header의 약자 h2, h3 다 모양 다름
+
+<하이퍼텍스트와 속성>
+● 하이퍼텍스트와 속성
+	실패는 성공의 어머니이다(토마스 에디슨) - ‘(토마스 에디슨)’에 연결 링크 추가
+=(html)=> 실패는 성공의 어머니이다 <a href=’www.에디슨.com“>(토마스 에디슨)</a>
+
+- ‘토마스 에디슨’이 링크인 것을 알리기 위한 <a> 태그, 어떤 링크에 연결할 것인지 href=
+- href 와 같이 추가 정보 제공하는 것을 ‘속성’이라고 부름
+- 새 탭에서 열기: [target=“_blank”] 속성 추가하기
+- 마우스 롤 오버 시 조그만 표시 창 뜨게 하기: [title=“미국의 발명가”] 속성 추가
+- <a></a>는 tag/ href title targe 등은 추가정보 표시하는 속성
+
+
+<태그의 중첩과 목록>
+● 목록 만들기
+	<ul><li>기술소개</li><li>기본문법</li><li>하이퍼텍스트와 속성</li></ul>
+	<ul><li>홍길동</li><li>전우치</li><li>황진이</li></ul>
+- <li>태그로 목록을 만들고 <ul>태그로 서로 다른 그룹을 만듬
+- <li> 들여쓰기로 가독성 높일수
+- <li>: list, <ol>: ordered list(순서 있음), <ul>: unordered list(순서 없음)
+
+<문서의 구조>
+● 문서의 구조
+<!DOCTYPE html>
+<html>
+<head>
+   <title> 영어사전</title>
+   <meta charset = “utf-8”>
+</head>
+<body>
+<h1>알파벳 별 과일과 야채</h1>
+<ol>
+   <li>Apple</li>
+   <li>Banana</li>
+   <li>Carrot</li>
+</ol>
+<h2>Apple</h2>
+Apple은 사과라는 뜻이다
+<h2>Banana</h2>
+Banana는 바나나라는 뜻이다.
+</body>
+</html>
+
+- <meta charset> = “utf-8”은 뷰어에서 html이 깨질 때 붙이기
+- <head>는 부가적인 정보, <body>는 본질적인 다시 말해 화면에 표시되는 내용
+
+<DOCTYPE>
+● DOCTYPE
+- 스크립트 맨 앞에 <!DOCTYPE html>을 붙이면 됨
+- 정확히 어떠한 표준을 따르고 있는 태그인지 알려줌
+
+<웹사이트 만들기>
+● 직접해보자
+1. 목차페이지 “index.html” 만들기
+2. 링크 붙이기 - <a href=“www.example.com”></a>
+3. 여러 개의 www.example.com html 꾸미기
+
+<주요 태그>
+● 단락 – p
+- p: ‘paragraph’ - 줄 바꿈 + 여백 – 단락의 시작과 끝에 <p>와 </p>
+● 줄바꿈 – br
+- br: ‘Forced line-break’ - 줄 바꿈 only, 여백은 없음 - 단락의 끝에만 <br> (내용이 없는 태그 = 한쪽 끝만) - 여러 개 사용 시 그만큼 더 늘어남
+● 이미지 – img
+- img: image – 사진 삽입 – 사진 들어갈 위치에 <img src=“img.jpg”> (img.jpg 사진을 넣자!)
+- 크기 조절 및 예비 이름, 도움말 추가 <img src=~ width=’?‘ height=’?‘ alt=’예비 이름‘ title=’이미지 실습‘>
+● 양식 – form
+- input: <input type= “text”> - 사용자가 정보를 입력할 수 있는 text
+- password : <input type= “password”> - *********
+- submit : <input type= “submit”> - 제출 버튼 만들기
+- form : <form action=“(input 보낼 주소)”> 
+- 로그인 창 만들어보자
+<html>
+<body>
+<form action=’http://localhost/login.php“>
+   <p>아이디: <input type=’text’ name = ‘id’></p>
+   <p>비밀번호: <input type= ‘password’ name=’id’></p>
+   <p>주소: <input type=’text’‘ name= ’address’></p>
+   <input type= ‘submit’>
+</form>
+</body>
+</html>
+ => 3가지 input들을 name이라는 이름을 붙여서 ‘http://localhost/login.php’로 전송한다.
+
+● form tag 中 텍스트 입력
+<html>
+<body>
+    <form action="">
+        <p>text : <input type="text" name="id" value="default value"></p>
+        <p>password : <input type="password" name="pwd" value="default value"></p>
+        <p>textarea :
+            <textarea cols="50" rows="2">default value</textarea>
+        </p>
+    </form>
+</body>
+</html>
+-value=“default value” - 페이지를 열었을 때 기본으로 ‘default value’가 적혀있음
+-textarea= 여러 줄 글상자 – cols=‘가로 몇 글자?’, rows=‘세로 몇 줄?‘
+
+● dropdown list
+-사용자가 하나만 선택
+<form action=“http://localhost/color.php”>
+<h1>색상</h1>
+<select>
+   <option value=’red’>붉은색</option>
+   <option value=’black’>검은색</option>
+   <option value=’blue’>파란색</option>
+</select>
+<input type=’submit’>
+</form>
+
+-사용자가 여러개 선택
+<select name=’color’ multiple>
