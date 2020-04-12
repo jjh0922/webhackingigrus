@@ -109,8 +109,11 @@
 
 ## 9. 함수(function): 하나의 로직을 재실행 할 수 있도록 하는 것. 코드의 재사용성 증가.
 ![image](https://user-images.githubusercontent.com/58950184/79060865-ce9c3780-7cc4-11ea-970c-e5a57d7268a1.png)
-- 함수의 입력과 출력
-  - 출력: return '무언가' - 함수를 종료하고 '무언가'를 뱉아냄
-  ![image](https://user-images.githubusercontent.com/58950184/79060934-a3661800-7cc5-11ea-8161-c7447c9df9cc.png)
-  - 입력: function(input) - 'input'이 변수가 됨. function을 호출할 때 괄호 안에 입력 넣어 input에 대입
 
+- 출력: return '무언가' - 함수를 종료하고 '무언가'를 뱉아냄
+  ![image](https://user-images.githubusercontent.com/58950184/79060934-a3661800-7cc5-11ea-8161-c7447c9df9cc.png)
+- 입력: function(input) - 'input'이 변수가 됨. function을 호출할 때 괄호 안에 입력 넣어 input에 대입
+![image](https://user-images.githubusercontent.com/58950184/79061029-bf1dee00-7cc6-11ea-9cd1-35db4607120d.png)
+- 함수를 정의하는 다른 방법  
+![image](https://user-images.githubusercontent.com/58950184/79061051-ebd20580-7cc6-11ea-9eeb-36ec05421874.png)
+## 10. 배열
