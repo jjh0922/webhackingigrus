@@ -60,6 +60,14 @@
   ![image](https://user-images.githubusercontent.com/58950184/79058358-f16c2300-7ca7-11ea-958e-0d3d0abfd6fb.png)  
   
 #
-7. 조건문(Condtional Statement)  
-- 
-7.
+7. 조건문(Condtional Statement) - 주어진 조건에 따라 애플리케이션이 다르게 동작  
+- if 문
+![image](https://user-images.githubusercontent.com/58950184/79058395-75260f80-7ca8-11ea-9dcd-e8962ef2201f.png)
+  - 'if(Boolean 타입 데이터)' - (ex) if(true) 또는 if(false), if(1=2), if(1=1)
+  - true일 경우 순차적으로 1, 2, 3, 4 alert 띄우고, true false 상관 없이 5 alert 띄우기
+- else, else if
+  - else if는 if나 else와는 달리 여러개 올 수 있다
+  - else if의 모든 조건이 false일 경우 else가 실행됨
+![image](https://user-images.githubusercontent.com/58950184/79058547-680a2000-7caa-11ea-8f69-dd29205ac7d8.png)
+
+
