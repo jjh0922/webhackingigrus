@@ -69,5 +69,48 @@
   - else if는 if나 else와는 달리 여러개 올 수 있다
   - else if의 모든 조건이 false일 경우 else가 실행됨
 ![image](https://user-images.githubusercontent.com/58950184/79058547-680a2000-7caa-11ea-8f69-dd29205ac7d8.png)
+- 조건문 응용
+  -if문끼리 중첩이 가능하다는 사실!
+![image](https://user-images.githubusercontent.com/58950184/79058702-3db96200-7cac-11ea-9aa4-f3b230d94b7d.png)
+- 논리 연산자
+  - AND: && - 좌항과 우항 모두 true여야 실행
+  - OR: || - 둘 중 적어도 하나만 true면 실행 (키보드 위치: Shift + '\'키)
+  - NOT: ! - !false는 true !true는 false
+![image](https://user-images.githubusercontent.com/58950184/79058793-56764780-7cad-11ea-9641-8deed8fc15b4.png)
+- Boolean의 대체제
+  - 1: true, 나머지 숫자: false
+  - false로 간주되는 데이터 형: 사진 참고 
+  ![image](https://user-images.githubusercontent.com/58950184/79058833-c1c01980-7cad-11ea-8ede-ad5be48c17c9.png)
+  
+#
 
+8. 반복문(loop, iterate)
+- 무한루프: 반복문에 반복조건이 없어 끊임없이 반복문을 실행
+- while문
+- 반복조건
+![image](https://user-images.githubusercontent.com/58950184/79060505-b75b4b00-7cc0-11ea-82f1-a82f36d4b48b.png)
+  - 컴퓨터는 숫자 셀 때 0부터 세는 것이 관습
+- for문
+  - for(초기화; 반복조건; 반복이 될 때마다 실행되는 코드)
+  - 'i=i+1' = 'i++' / '++I'와 달라
+![image](https://user-images.githubusercontent.com/58950184/79060586-e0c8a680-7cc1-11ea-9a9d-4a58ccaf7bdf.png)  
+- 반복문 제어
+  - break: 반복을 중간에 중단
+  - continue: 실행을 중단하되 반복은 지속
+![image](https://user-images.githubusercontent.com/58950184/79060667-b0353c80-7cc2-11ea-8539-bff0b438468c.png)  
+![image](https://user-images.githubusercontent.com/58950184/79060677-c6db9380-7cc2-11ea-8c09-80eb65ebccf8.png)
+
+- 반복의 중첩
+  - 이렇게 개발자 도구를 이용해 체계적으로 코드를 분석해 볼 수 있다
+  ![image](https://user-images.githubusercontent.com/58950184/79060735-ac55ea00-7cc3-11ea-90f9-98acf715c324.png)
+  - 안쪽 for문에서 순환하며 00에서 09까지 안쪽 for문에서 담당, 안쪽 for문 종료되면서 바깥쪽 for문 시작, 바깥쪽 for문이 다시 안쪽 for문 순환으로 넘기면서 10에서 19까지 출력...
+  
+#
+
+9. 함수(function): 하나의 로직을 재실행 할 수 있도록 하는 것. 코드의 재사용성 증가.
+![image](https://user-images.githubusercontent.com/58950184/79060865-ce9c3780-7cc4-11ea-970c-e5a57d7268a1.png)
+- 함수의 입력과 출력
+  - 출력: return '무언가' - 함수를 종료하고 '무언가'를 뱉아냄
+  ![image](https://user-images.githubusercontent.com/58950184/79060934-a3661800-7cc5-11ea-8161-c7447c9df9cc.png)
+  - 입력: function(input) - 'input'이 변수가 됨. function을 호출할 때 괄호 안에 입력 넣어 input에 대입
 
