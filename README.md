@@ -191,4 +191,10 @@
 ![image](https://user-images.githubusercontent.com/58950184/79066502-539e4580-7cf3-11ea-9a01-438a49ecdb55.png)
 
 ## 3. webhacking.kr: 14번
+(1) 화면이 검은색이다 F12를 눌러주자
+![image](https://user-images.githubusercontent.com/58950184/79066612-52214d00-7cf4-11ea-9658-f245b7e6b531.png)
+(2) if문에 비밀번호가 있다. ul이라는 변수를 비밀번호로 입력을 해야 한다. ul의 초기 값은 'document.URL'. 'ul=ul.indexOf(".kr")'을 실행하면 ul에는 .kr이 없음으로 ul은 -1이 된다. 'ul=ul*30'을 하면 ul=-30. -30을 입력해주자.
+(3) 인줄 알았지만 아니다ㅠㅠ document.URL이 string이 아니라 현재 주소 URL이라고 한다. 따옴표가 없으니 납득이 간다. 'webhacking.kr(이하 생략)'에서 '.kr은 10번 째 index이다. 10*30=300. 300을 입력해주자.
+(4) 위에 주소창을 눌러보니 숨겨졌던 https://가 나온다. 이거까지 감안하면 18*3-=540. 540을 입력해주자.
 
+## 4. webhacking.kr: 15번
