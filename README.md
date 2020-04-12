@@ -1,6 +1,6 @@
 # 웹해킹 3주차 
 
-** 1. 실행방법과 실습환경**
+## 1. 실행방법과 실습환경
 - 자바 스크립트는 <script> </script> 사이에 위치  
   => 여기서 alert('Hello world!"); 가 자바스크립트  
   => Ctrl + O 로 파일 열기
@@ -9,7 +9,7 @@
   => 에디터 도구: IDE - 통합 개발자 도구 - sublime text 추천  
   ![image](https://user-images.githubusercontent.com/58950184/79058014-1c07ad00-7ca3-11ea-8bd4-046902ae5b3f.png)  
 #
-#h2 2. 숫자와 문자 - 데이터의 종류  
+## 2. 숫자와 문자 - 데이터의 종류  
 - 숫자 = 정수, 실수  
 - alert 함수가 경고창 띄우는거 귀찮을 때 -> "console.log()" 이용. 크롬에서는 생략 가능.  
 - 계산 기호  
@@ -24,26 +24,26 @@
 - '\n' : 줄 바꿈
 - 생활코딩 자바스크립트 사전 애용하기!  
 #
-#h2 3. 변수(variable) - 값을 담는 컨테이너  
+## 3. 변수(variable) - 값을 담는 컨테이너  
 - 'var' a = 1 -> a라는 변수의 값을 1로 한다. 변수에 문자 들어가도 무관. (cf) 변수 여러개 할당: var a=1, b=2  
 - 변수를 통해 코드의 효용성 높일 수 있어. 유지보수가 수월한 코드  
 ![image](https://user-images.githubusercontent.com/58950184/79057997-cc28e600-7ca2-11ea-9693-c8fb2a102d75.png)  
 
 #
-#h2 4. 주석(comment) - 실행 안되는 레퍼런스 용  
+## 4. 주석(comment) - 실행 안되는 레퍼런스 용  
 - '//이것은 주석임ㅎ'
 - /* 여러줄 (줄바꿈)(줄바꿈) 여러줄 */  
 ![image](https://user-images.githubusercontent.com/58950184/79057984-9a178400-7ca2-11ea-9f84-642a59a5f097.png)  
 
 #
 
-#h2 5. 줄바꿈과 여백
+## 5. 줄바꿈과 여백
 - ;(세미클론) : '명령이 끝났습니다~' but, JS는 줄바꿈을 ;로 이해하기도 함. 
 - 가독성을 위해 띄어쓰기, 세미클론, 들여쓰기 습관화!  
 
 #
 
-#h2 6. 연산자 - 컴퓨터에 지시하기 위한 기호
+## 6. 연산자 - 컴퓨터에 지시하기 위한 기호
 - 대입연산자
   - 'a = 2' -> 변수 a에 2를 대입하라
 - 비교연산자
@@ -60,7 +60,7 @@
   ![image](https://user-images.githubusercontent.com/58950184/79058358-f16c2300-7ca7-11ea-958e-0d3d0abfd6fb.png)  
   
 #
-#h2 7. 조건문(Condtional Statement) - 주어진 조건에 따라 애플리케이션이 다르게 동작  
+## 7. 조건문(Condtional Statement) - 주어진 조건에 따라 애플리케이션이 다르게 동작  
 - if 문
 ![image](https://user-images.githubusercontent.com/58950184/79058395-75260f80-7ca8-11ea-9dcd-e8962ef2201f.png)
   - 'if(Boolean 타입 데이터)' - (ex) if(true) 또는 if(false), if(1=2), if(1=1)
@@ -84,7 +84,7 @@
   
 #
 
-#h2 8. 반복문(loop, iterate)
+## 8. 반복문(loop, iterate)
 - 무한루프: 반복문에 반복조건이 없어 끊임없이 반복문을 실행
 - while문
 - 반복조건
@@ -107,7 +107,7 @@
   
 #
 
-#h2 9. 함수(function): 하나의 로직을 재실행 할 수 있도록 하는 것. 코드의 재사용성 증가.
+## 9. 함수(function): 하나의 로직을 재실행 할 수 있도록 하는 것. 코드의 재사용성 증가.
 ![image](https://user-images.githubusercontent.com/58950184/79060865-ce9c3780-7cc4-11ea-970c-e5a57d7268a1.png)
 - 함수의 입력과 출력
   - 출력: return '무언가' - 함수를 종료하고 '무언가'를 뱉아냄
