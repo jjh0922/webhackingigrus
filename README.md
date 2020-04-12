@@ -152,8 +152,26 @@
 
 ## 12. 모듈 
 - 하나의 코드를 여러 부품으로 나눔. 이 부품이 모듈.
+  - 사진에서 greetings.js처럼 따로 파일이 존재하는 것이 모듈화의 예시
+![image](https://user-images.githubusercontent.com/58950184/79065660-146cf600-7ced-11ea-893f-cbf5b48ae120.png)
+- Node.js - 다른 환경에서는 모듈 로드가 조금 다름.
+- 라이브러리 - 자주 사용되는 로직을 재사용되기 편리하도록 정리한 것
+  - 오픈소스 라이브러리에 누군가 만들어 놓은 것을 적극적으로 활용하자 (jQuery)
+  - F12의 Network 창에 해당 라이브러리((ex) jquery.js)가 잘 있는지 확인
 
+## 13. UI와 API 그리고 문서
 
+- API(Application Programming Interface) vs UI(User Interface)
+  - 개발자는 API를 통해 소프트웨어 통제. 주어진 API 환경에 대해 찾아낼 수 있어야.
+- 레퍼런스와 튜토리얼
+  - [ECMAScript] (http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+  - [생활코딩 자바스크립트 사전] (http://opentutorials.org/course/50)
+  - [MDN 자바스크립트 레퍼런스] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+  - [MSDN jscript 레퍼런스] (http://msdn.microsoft.com/ko-kr/library/vstudio/z688wt03(v=vs.100).aspx)
+
+## 14. 정규표현식(Regular Expression)
+- 정규표현식 - 문자열에서 특정 문자를 찾는 도구
+  - 
 
 #
 # 3주차 워게임 Write-up
@@ -167,3 +185,10 @@
 ![image](https://user-images.githubusercontent.com/58950184/79062279-cac3e180-7cd3-11ea-903c-74e1c91d705d.png)
 
 ## 2. root-me: javascript- authentication 2
+(1) 일단 F12부터 누르고 보자. 교활하게 login.js로 모듈화시켜 코드에서 숨기려고 하였지만 나는 방금 모듈화에 대한 수업을 듣고 왔다. Sources에서 login.js를 찾아보자.
+![image](https://user-images.githubusercontent.com/58950184/79065974-39faff00-7cef-11ea-998c-19ea46d94ce9.png)
+(2) 조금 헤맸지만, 금방 찾았다. 'TheSpilt = TheLists[i].split(":")' 부분에서 ':'를 중심으로 TheSplit[0]와 TheSplit[1]을 나누었다. 따라서 TheSplit[0]는 'GOD', TheSplit[1]은 'HIDDEN'이다. 처음 나오는 if문 내 개인적인 생각이지만, TheLists가 한번 밖에 안나오고 반복이 되지 않기 때문에 코드가 진행되는 동안 TheLists[0] 밖에 없을 것 같다. 따라서 한번 틀리면 새로고침하지 않는 이상 바로 else로 가지 않을까?`
+![image](https://user-images.githubusercontent.com/58950184/79066502-539e4580-7cf3-11ea-9a01-438a49ecdb55.png)
+
+## 3. webhacking.kr: 14번
+
