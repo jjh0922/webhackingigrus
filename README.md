@@ -117,12 +117,53 @@
 ![image](https://user-images.githubusercontent.com/58950184/79061029-bf1dee00-7cc6-11ea-9cd1-35db4607120d.png)
 - 함수를 정의하는 다른 방법  
 ![image](https://user-images.githubusercontent.com/58950184/79061051-ebd20580-7cc6-11ea-9eeb-36ec05421874.png)
-## 10. 배열
+## 10. 배열(Array) - 여러개의 데이터를 담는 컨테이너
+  - 배열 = 여러 개의 데이터를 하나의 변수에 저장, 변수 = 하나의 데이터를 저장
+  - var 배열 = ['데이터1', '데이터2', '데이터3']
+  - '색인(index)': 배열 안의 각 데이터 (ex) 배열[0]='데이터1', 배열[1]='데이터2' ...
+  - function은 한가지 출력 밖에 못낸다는 단점을 보완
+![image](https://user-images.githubusercontent.com/58950184/79062399-057a4980-7cd5-11ea-92ef-9e3c08c2dd93.png)
+- 배열의 사용
+  - 배열의 크기= 배열.length
+![image](https://user-images.githubusercontent.com/58950184/79062512-0a8bc880-7cd6-11ea-911d-ca7f63aeb655.png)
+- 배열의 조작(추가)
+  - 배열.push('추가할 데이터'): 배열 안에 새로운 데이터를 꼬리에 추가
+  - 배열.concat(['추가할 데이터1', '추가할 데이터2']): 배열 안에 복수의 새로운 데이터를 꼬리에 추가
+  - 배열.unshift('추가할 데이터'): 배열 안에 새로운 데이터를 머리에 추가 - index가 변화함
+  - 배열.splice(배열에 추가할 위치 index, 제거할 기존의 데이터 수, 추가할 데이터(복수 가능))
+- 배열의 조작(추가 아님)
+  - 배열.shift(): 배열 안에 제일 앞에 있는 데이터 삭제
+  - 배열.pop(): 배열 안에 제일 끝에 있는 데이터 삭제
+  - 배열.sort(): 배열을 알파벳 순서로 정렬
+  - 배열.reverse(): 배열을 알파벳 반대 순서로 정렬
+  - 배열.sort(sortfunction): 정렬기준을 function으로 따로 만들어서 정렬
+  
+## 11. 객체(Object) - 배열과 유사, 객체는 index를 문자로 나타냄
+![image](https://user-images.githubusercontent.com/58950184/79065107-c35b0300-7ce8-11ea-88aa-c80deefa238f.png)  
+- 객체와 반복문
+  - for(key in grades) - grades 객체 내에서 key 하나씩 꺼낸다 ~~여기가 좀 어려워요ㅠㅠ key나 name이라는 변수를 설정해 준 적 없는데 왜 막 바꾸시는지..~~  
+  ![image](https://user-images.githubusercontent.com/58950184/79065328-74ae6880-7cea-11ea-88a5-0d2a8a3919a5.png)  
+- 객체지향 프로그래밍
+  - 객체 내에 function 저장 가능
+  - this: 약속된 변수. 함수가 소속된 객체를 가르킴/ this.list: 함수가 소속된 객체의 list라는 객체
+  - console.log(a, b, c) => 여러 개를 한번에 출력
+  - 객체, 객체 내 데이터, 이 데이터 사용하는 함수 => grades.그함수 로 처리
+![image](https://user-images.githubusercontent.com/58950184/79065436-3feee100-7ceb-11ea-81e9-e8e2eaf4d9b8.png)  
 
+## 12. 모듈 
+- 하나의 코드를 여러 부품으로 나눔. 이 부품이 모듈.
+
+
+
+#
 # 3주차 워게임 Write-up
 
 ## 1. root-me: javascript- source
 (1) 들어가니 비밀번호를 입력하라는 화면이 뜬다. F12를 눌러 개발자 도구를 열어보자.
 ![image](https://user-images.githubusercontent.com/58950184/79062173-b501ec80-7cd2-11ea-8256-b0612af0a6ff.png)
-(2) 요리저리 기웃거리다보니 자바 스크립트의 if 문이 보인다.
+(2) 요리저리 기웃거리다보니 자바 스크립트의 if 문이 보인다. 방금의 입력창에 123456azerty를 입력하면 이 비밀번호로 인증할 수 있다는 alert가 뜨고, 다른게 입력될 경우 잘못된 비밀번호라는 표시가 뜬다고 한다. 
 ![image](https://user-images.githubusercontent.com/58950184/79062200-e5498b00-7cd2-11ea-9229-ae8dd7858c0c.png)
+(3) 무슨 일이 일어날지 자바스크립트로 이미 한번 보았지만, 아직 배우는 단계니 한번 확인해주고 인증한다.
+![image](https://user-images.githubusercontent.com/58950184/79062279-cac3e180-7cd3-11ea-903c-74e1c91d705d.png)
+
+## 2. root-me: javascript- authentication 2
