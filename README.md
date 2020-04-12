@@ -1,4 +1,4 @@
-# 웹해킹 3주차 
+# 웹해킹 3주차 - 강의 요약
 
 ## 1. 실행방법과 실습환경
 - 자바 스크립트는 <script> </script> 사이에 위치  
@@ -65,6 +65,7 @@
 ![image](https://user-images.githubusercontent.com/58950184/79058395-75260f80-7ca8-11ea-9dcd-e8962ef2201f.png)
   - 'if(Boolean 타입 데이터)' - (ex) if(true) 또는 if(false), if(1=2), if(1=1)
   - true일 경우 순차적으로 1, 2, 3, 4 alert 띄우고, true false 상관 없이 5 alert 띄우기
+  - prompt('질문') -> 사용자에게 입력창을 주고 정보를 받아냄
 - else, else if
   - else if는 if나 else와는 달리 여러개 올 수 있다
   - else if의 모든 조건이 false일 경우 else가 실행됨
@@ -117,3 +118,11 @@
 - 함수를 정의하는 다른 방법  
 ![image](https://user-images.githubusercontent.com/58950184/79061051-ebd20580-7cc6-11ea-9eeb-36ec05421874.png)
 ## 10. 배열
+
+# 3주차 워게임 Write-up
+
+## 1. root-me: javascript- source
+(1) 들어가니 비밀번호를 입력하라는 화면이 뜬다. F12를 눌러 개발자 도구를 열어보자.
+![image](https://user-images.githubusercontent.com/58950184/79062173-b501ec80-7cd2-11ea-8256-b0612af0a6ff.png)
+(2) 요리저리 기웃거리다보니 자바 스크립트의 if 문이 보인다.
+![image](https://user-images.githubusercontent.com/58950184/79062200-e5498b00-7cd2-11ea-9229-ae8dd7858c0c.png)
